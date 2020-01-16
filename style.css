@@ -1,0 +1,28 @@
+div 
+{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+div div 
+{
+    display: flex;
+    flex-direction: row;
+
+}
+
+button, select, label, input, p  
+{
+    padding: 10pt;
+    font-size: large;
+}
+
+
+canvas
+{
+    background-color: aqua;
+    border: 3pt solid gray;
+    width: 160px;
+    height: 80px;
+}

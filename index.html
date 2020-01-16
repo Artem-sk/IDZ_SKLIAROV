@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Крестики-нолики</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+
+    <button onclick="NewGame();">Новая игра</button>
+
+
+    <select name="GameMode" id="gm1"  onchange = "ChangeDataPlayers();">
+        <option value="AI">Играть с ИИ</option>
+        <option value="Human">Играть с другом</option>
+    </select>
+
+    <select name="CrossOrZero" id="gm2" onchange = "ChangeDataPlayers();">
+            <option value= "true">Крестики</option>
+            <option value= "">Нолики</option>
+    </select>
+
+
+
+
+    <br>
+    <label for="pl1">Игрок 1:</label>
+    <input type="text" name="player1" id="pl1" value="Игрок 1" onchange = "ChangeDataPlayers();">
+    <label for="pl1" id="plw1">0</label>
+    <label for="pl1" id="plt1">Крестики</label>
+    
+    <br>
+    <label for="pl2">Игрок 2:</label>
+    <input type="text" name="player2" id="pl2" value="Игрок 2" onchange = "ChangeDataPlayers();">
+    <label for="pl2" id="plw2">0</label>
+    <label for="pl2" id="plt2">Нолики</label>
+    
+
+
+
+    <p id="plm1"></p>
+    
+
+
+
+    <div>
+        <div>
+                <canvas id = "1canvas" onclick="OnClickCanvas('1canvas');">1</canvas>
+                <canvas id = "2canvas" onclick="OnClickCanvas('2canvas');">2</canvas>
+                <canvas id = "3canvas" onclick="OnClickCanvas('3canvas');">3</canvas>
+        </div>
+        
+        <div>
+                <canvas id = "4canvas" onclick="OnClickCanvas('4canvas');">4</canvas>
+                <canvas id = "5canvas" onclick="OnClickCanvas('5canvas');">5</canvas>
+                <canvas id = "6canvas" onclick="OnClickCanvas('6canvas');">6</canvas>
+        </div>
+       
+        <div>
+                <canvas id = "7canvas" onclick="OnClickCanvas('7canvas');">7</canvas>
+                <canvas id = "8canvas" onclick="OnClickCanvas('8canvas');">8</canvas>
+                <canvas id = "9canvas" onclick="OnClickCanvas('9canvas');">9</canvas>
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>
